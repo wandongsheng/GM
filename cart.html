@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	    <script type="text/javascript" src="js/cart.js"></script>
+	    <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>		    
+	</head>
+	<body>
+		<div id="wrap-title">
+	    	<div id="title">
+	    		<img src="images/title.jpg"/>
+	    		<span id="cha"></span>	    		
+	    	</div>
+	    </div>
+	    <script type="text/javascript">
+	    	var oWrapTitle = document.getElementById("wrap-title");
+	    	var oCha = document.getElementById("cha");
+	    	oCha.onclick = function(){
+	    		oWrapTitle.style.display = "none";
+	    	}
+	    </script>
+	    <!------------------top 国美会员 && 我的订单----------------------->
+	    <div id="wrap-top">
+	    	<div id="top">
+	    		<!--国美会员-->
+	    		<ul class="listvip">
+	    			<li class="vip1"><a href="">国美会员<span></span></a>
+	    				<div id="gmhy">
+		    				<ul id="pic">
+			    				<li class="huiyuantupian"><a href=""></a></li>
+			    				<li>欢迎来到国美，</li>
+			    				<li><a href="denglu.html">请登录！</a></li>
+			    			</ul>
+			    			<p>我的特权<a href="denglu.html">会员俱乐部</a></p>
+			    			<div id="denglulunbo"></div>	
+		    			</div>
+	    			</li>
+	    			<li class="vip2"><a href="denglu.html">登录</a></li>
+	    			<li class="vip3"><a href="zhuce.html">注册有礼<span></span></a></li>
+	    				    			
+	    		</ul>
+	    		<!--我的订单-->
+	    		<ul class="dingdan">  
+	    			<li><a href="">我的订单</a></li>
+	    			<li><a href="">我的国美</a>
+		    			<div id="wodeguomei">
+		    				<p>我的国美，<a href="denglu.html">请登录！</a></p>
+		    				<ul class="daichulidingdan">
+		    					<li><a href="">待处理订单</a></li>
+		    					<li><a href="">我的金融</a></li>
+		    					<li><a href="">我的美店</a></li>
+		    					<li><a href="">我的收藏</a></li>
+		    					<li><a href="">个人资料</a></li>
+		    				</ul>
+		    				<ul class="hongquan">
+		    					<li><a href="">红券</a></li>
+		    					<li><a href="">蓝券</a></li>
+		    					<li><a href="">购物券</a></li>
+		    					<li><a href="">店铺券</a></li>
+		    				</ul>
+		    				<p class="zuji">
+		    					<span>足迹</span>		
+		    				</p>
+		    			</div>
+	    			</li>
+	    			<li><a href="">企业采购</a></li>
+	    			    <div id="qiyecaigou">
+	    			    	<img src=""/>
+	    			    </div>
+	    			<li><img src=""/><a href="">服务中心</a></li>	    			    
+	    			<li><a href="">网站导航</a></li>	    			    
+	    			<li><a href="">手机国美</a></li>
+	    			    <div id="shoujiguomei">
+	    			    	<img src=""/>
+	    			    </div>
+	    		</ul>
+	    	</div>
+	    </div>
+<!------------------LOGO--------------------->	    
+	<div id="wrap-logo">
+		<a href="index.html"><img src="images/loginlogo.png"/></a>
+	</div>
+		
+
+	<div id="nav">
+		<ul>
+			<li><input type="checkbox" id="checkAll" value="" />全选</li>
+			<li>商品信息</li>
+			<li>单价</li>
+			<li>数量</li>
+			<li>小计</li>
+			<li>操作</li>
+		</ul>
+	</div>
+<!----------------------购物车------------------------------>	
+	<div id="wupin-wrap">
+		<ul class="wupinlan">
+			
+		</ul>
+		
+	</div>
+	    
+	</body>
+</html>

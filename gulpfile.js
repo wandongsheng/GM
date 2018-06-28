@@ -9,7 +9,7 @@ var babel = require("gulp-babel");
 
 //1.拷贝所有html文件
 gulp.task("copy-index",function(){
-	gulp.src("index.html")
+	gulp.src("*.html")
 	.pipe(gulp.dest("dist"))
 	.pipe(connect.reload());	
 })
@@ -22,12 +22,11 @@ gulp.task("copy-img",function(){
 })
 
 //3.拷贝所有的js&ES6转换ES5
-gulp.task("copy-js",function(){
-	gulp.src("js/**")
-	.pipe(babel({"presets":["es2015"]}))
-	.pipe(gulp.dest("dist/js"))
-	.pipe(connect.reload());
-})
+//gulp.task("copy-js",function(){
+//	gulp.src("js/**")	
+//	.pipe(gulp.dest("dist/js"))
+//	.pipe(connect.reload());
+//})
 
 //4.sass转化为css
 gulp.task("sass",function(){
@@ -43,18 +42,20 @@ gulp.task("sass",function(){
 //	.pipe(concat("mainMax.js"))
 //})
 
-//6.压缩文件
+//6.压缩文件&拷贝所有的js&ES6转换ES5
 gulp.task("scripts",function(){
 	gulp.src("js/**")
+	.pipe(babel({"presets":["es2015"]}))
 	.pipe(uglify())
-	.pipe(gulp.dest("dist/js"));
+	.pipe(gulp.dest("dist/js"))
+	.pipe(connect.reload());
 })
 
 
 gulp.task("watch",function(){
-	gulp.watch("index.html",["copy-index"]);
+	gulp.watch("*.html",["copy-index"]);
 	gulp.watch("images/*.{jpg,png}",["copy-img"]);
-	gulp.watch("js/**",["copy-js"]);
+//	gulp.watch("js/**",["copy-js"]);
 	gulp.watch("sass/**",["sass"]);
 	gulp.watch("js/**",["scripts"]);
 })

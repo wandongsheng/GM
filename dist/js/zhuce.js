@@ -1,0 +1,1 @@
+"use strict";$(function(){$("#btn").click(function(){var t={status:"register",userID:$("#userName").val(),password:$("#passWord").val()};$.post("http://datainfo.duapp.com/shopdata/userinfo.php",t,function(t){console.log(t),0==t?alert("用户名重复，请重新输入"):1==t?window.location.href="denglu.html":alert("密码错误")})})});

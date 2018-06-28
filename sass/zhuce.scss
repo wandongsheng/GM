@@ -1,0 +1,123 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{ font-family:"微软雅黑";}
+input,a{outline:none;}
+
+#header{
+    margin: auto;    
+    height: 200px;
+    a{
+        display: block;        
+        width: 286px;
+        margin: 0 auto;
+        margin-left: 200px;
+        height: 56px;
+        padding-top: 70px;        
+    }
+}
+
+.content-bg{
+    //background: pink;
+    margin:0 auto;
+    height: 580px;
+
+    /*overflow: hidden;*/
+}
+#reg-cont{
+    width: 990px;
+    height: 580px;
+    border: 1px solid #808080;
+    margin: auto;
+    margin-left: 200px;
+
+}
+#reg-cont img{
+    float: right;
+    margin-right: 70px;
+    width: 350px;
+    height: 350px;
+}
+/*注册头部信息*/
+.clearfix{
+    width: 310px;
+    height: 50px;
+    overflow: hidden;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+.clearfix li{
+    width: 152px;
+    height: 50px;
+    border: 1px solid #e6e6e6;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    background: #f3f3f3;
+    font-size: 16px;
+}
+
+.clearfix li:nth-child(1){
+    background: white;
+    border-bottom: none;
+    border-top: 2px solid #cc0000;
+    
+}
+
+.active{
+    /*border-top: 1px solid red;*/
+    color: red;
+}
+
+
+/*register引入*/
+
+.register{
+    width: 450px;
+    height: 400px;
+    font-size: 16px;
+    float: left;
+    border: 1px solid gainsboro;
+    a:hover{
+        color: red;
+    }
+}
+.register .ipt{
+    width: 450px;
+    height: 40px;
+    margin: 30px auto;
+    position: relative;
+}
+.register .ipt span{
+    width: 100px;
+    height: 40px;
+    /*background: yellow;*/
+    line-height: 40px;
+    float: left;
+}
+.register .ipt input{
+    display: block;
+    width: 250px;
+    height: 36px;
+    float: left;
+}
+
+#btn{
+    display: block;
+    width: 300px;
+    height: 40px;
+    margin: 30px auto;
+    background: red;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border:0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+

@@ -1,0 +1,1 @@
+"use strict";function getcss(t,e){return t.currentStyle?t.currentStyle[e]:getComputedStyle(t)[e]}

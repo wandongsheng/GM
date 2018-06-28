@@ -1,0 +1,1 @@
+//获取DOM元素的样式封装//var box = document.get....."id"//obj 是要获取的DOM元素， name是元素的是属性。function getcss(obj,name) {    if (obj.currentStyle){        return obj.currentStyle[name]    } else {        return getComputedStyle(obj)[name];    }}// var  value = getcss(box,"left");//调用// console.log(value);
